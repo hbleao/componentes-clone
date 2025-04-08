@@ -1,0 +1,48 @@
+@import '../../../css/src/tokens/colors.scss';
+@import '../../../css/src/tokens/layers.scss';
+@import '../../../css/src/tokens/font-size.scss';
+@import '../../../css/src/tokens/font-family.scss';
+@import '../../../css/src/tokens/font-weight.scss';
+@import '../../../css/src/tokens/breakpoints.scss';
+
+.modal__body {
+  position: relative;
+  font-family: $porto-roobert;
+  padding-bottom: 5rem;
+  overflow: scroll;
+  height: calc(75% - 50px);
+  overflow-x: hidden;
+
+  @media (min-width: $tablet-landscape) {
+    height: calc(82% - 40px);
+  }
+
+  @media (min-width: $desktop) {
+    height: calc(82% - 30px);
+  }
+
+  @media (min-width: $wide) {
+    height: calc(82% - 30px);
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $black05;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $black15;
+    width: 16px;
+    height: 40px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $black30;
+  }
+
+  p {
+    font-weight: $regular;
+    font-size: $text-4xs;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}

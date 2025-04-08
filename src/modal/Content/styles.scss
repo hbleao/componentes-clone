@@ -1,0 +1,32 @@
+@import '../../../css/src/tokens/colors.scss';
+@import '../../../css/src/tokens/layers.scss';
+@import '../../../css/src/tokens/font-size.scss';
+@import '../../../css/src/tokens/font-family.scss';
+@import '../../../css/src/tokens/font-weight.scss';
+@import '../../../css/src/tokens/breakpoints.scss';
+
+.modal__content {
+  height: 100%;
+  margin: 0rem 0.8rem;
+
+  @media (min-width: $tablet-portrait) {
+    margin: 0 2.4rem;
+  }
+  @media (min-width: $tablet-landscape) {
+    margin: 0 2.4rem 0 1.6rem;
+  }
+  @media (min-width: $desktop) {
+    margin: 0 2.4rem 0 2.4rem;
+  }
+
+  @media (min-width: $wide) {
+    max-width: calc(1600px / 0 - 4rem);
+    margin: 0 2rem 0 4rem;
+  }
+
+  h3 {
+    :focus {
+      outline-offset: -2px;
+    }
+  }
+}
